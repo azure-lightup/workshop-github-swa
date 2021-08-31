@@ -4,10 +4,14 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'examples/stapp-nuxt-content/**'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - main
+    paths:
+      - 'examples/stapp-nuxt-content/**'
 
 jobs:
   build_and_deploy_job:
