@@ -2,7 +2,11 @@
 
 ## Nuxt.js アプリケーションの新規作成
 
-CLI を使って新規アプリケーションを作成します。作成時のオプションは以下を参考にして下さい。`<アプリケーション名>` は任意の名称を設定して下さい（`stapp-nuxt-content` など）。
+NuxtJS 付属の CLI を使って新規アプリケーションを作成します。
+
+> [インストール - NuxtJS](https://ja.nuxtjs.org/docs/2.x/get-started/installation)
+
+作成時のオプションは以下を参考にして下さい。`<アプリケーション名>` は任意の名称を設定して下さい（`stapp-nuxt-content` など）。
 
 ```sh
 npx create-nuxt-app stapp-nuxt-content
@@ -34,6 +38,10 @@ npm run dev
 
 Nuxt.js では Full Static Generation と呼ばれる静的ファイルの出力機能を使って、アプリケーションを静的サイトとして出力することができます。
 
+> [Going Full Static - NuxtJS](https://ja.nuxtjs.org/blog/going-full-static)
+
+まず、以下のコマンドで静的ファイルを生成します。
+
 ```sh
 npm run generate
 ```
@@ -45,6 +53,10 @@ npm run start
 ```
 
 ## Static Web App CLI を使ったエミュレート
+
+Static Web Apps ではローカルでクラウド上と同じ動作をエミュレートできる CLI が用意されています。
+
+> [Azure Static Web Apps 用にローカル開発環境を設定する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/static-web-apps/local-development)
 
 ローカル環境に Azure Static Web Apps CLI (SWA CLI) をインストールします（npm のグローバルインストールになります）。
 
