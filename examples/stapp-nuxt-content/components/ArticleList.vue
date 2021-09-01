@@ -11,7 +11,7 @@
 export default {
   props: {
     title: { type: String, required: true },
-    date: { type: String, required: true },
+    date: { type: String, required: false, default: 'xxxx.xx.xx' },
     slug: { type: String, required: true },
   },
 }
