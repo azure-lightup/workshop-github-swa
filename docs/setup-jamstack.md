@@ -97,3 +97,5 @@ export default {
 ```
 
 ブラウザで記事一覧の URL `http://localhost:4280` を開きます。
+
+最後に、Git で変更をプッシュしておいて下さい。
