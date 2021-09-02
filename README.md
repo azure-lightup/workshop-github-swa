@@ -14,6 +14,8 @@
 | Visual Studio Code | |
 | Nuxt.js | |
 | Nuxt Content | |
+| Markdown | |
+
 </details>
 
 ## 全体の流れ
@@ -47,7 +49,40 @@
 - [パターンA: GitHub を利用するワークショップ](https://github.com/zengeeks/preparation-check#パターンa-github-を利用するワークショップ)
 - [パターンD: Microsoft Azure を利用するワークショップ](https://github.com/zengeeks/preparation-check#パターンd-microsoft-azure-を利用するワークショップ)
 - [パターンF: Jamstack を学ぶワークショップ](https://github.com/zengeeks/preparation-check#パターンf-jamstack-を学ぶワークショップ)
+
 </details>
 
 ## 2. 追加の環境準備
 
+[1. 事前準備環境チェック](#1-事前準備環境チェック) でご準備してもらった環境をベースに、さらに下記の環境を用意します。
+
+- [Azure Static Web Apps CLI のインストール](#azure-static-web-apps-cli-のインストール)
+- [Visual Studio Code の拡張機能 Vetur のインストール](#visual-studio-code-の拡張機能-vetur-のインストール)
+
+### Azure Static Web Apps CLI のインストール
+
+Azure Static Web Apps ではローカルでクラウド上と同じ動作をエミュレートできる CLI が用意されています。
+
+> [Azure Static Web Apps 用にローカル開発環境を設定する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/static-web-apps/local-development)
+
+Azure Static Web Apps CLI (SWA CLI) をインストールするには、下記のコマンドを実行してください（`npm` のグローバルインストールを行います）。
+
+```sh
+npm install -g @azure/static-web-apps-cli
+```
+
+### Visual Studio Code の拡張機能 Vetur のインストール
+
+Visual Studio Code の拡張機能 Vetur は、Vue のコードの記述をサポートしてくれる拡張機能です。
+
+下記のページを開き、「Install」ボタンを選択して Vetur をインストールしましょう。
+
+- [Vetur - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+
+## 3. 新規の Nuxt.js プロジェクトを作成する
+
+## 4. Azure Static Web App のリソースを作成する
+
+## 5. Nuxt Content を組み込む
+
+## 6. GitHub プルリクエストで SWA に自動デプロイする
