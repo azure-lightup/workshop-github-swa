@@ -2,11 +2,13 @@
 
 このリポジトリは、Azure Light-up ワークショップシリーズのうち、GitHub と Azure Static Web Apps を学ぶワークショップの資料です。
 
+ワークショップでは、Nuxt.js を用いて Jamstack で構成されたアプリケーションを作成し、GitHub Actions と Azure Static Web Apps を用いてホストする一連の流れを学習します。
+
 ### 用語解説
 
 <details>
 <summary>用語解説はこちら</summary>
-
+<br/>
 | 用語 | 説明 |
 |----|----|
 | GitHub | Git を用いてバージョン管理を行うためのプラットフォーム。ファイルの管理だけでなく、コラボレーションのための機能が豊富で、セキュリティの強化の機能が拡充されて行っています。 |
@@ -23,9 +25,10 @@
 - 1. 事前準備の環境チェック
 - 2. 追加の環境準備
 - 3. 新規の Nuxt.js プロジェクトを作成する
-- 4. Azure Static Web App のリソースを作成する
-- 5. Nuxt Content を組み込む
-- 6. GitHub プルリクエストで SWA に自動デプロイする
+- 4. プロジェクトを GitHub のリポジトリに push する
+- 5. Azure Static Web App のリソースを作成する
+- 6. Nuxt Content を組み込む
+- 7. GitHub プルリクエストで SWA に自動デプロイする
 
 ## 1. 事前準備環境チェック
 
@@ -39,11 +42,11 @@
 - [ ] Git のインストール
 - [ ] Visual Studio Code のインストール
 - [ ] Node.js のインストール
-- [ ] ネットワークの確認
+- [ ] ネットワークの確認（ `git` コマンドで GitHub に接続できること）
 
 <details>
 <summary>環境準備については、こちらをご参考ください。</summary>
-
+<br/>
 環境チェック用リポジトリ [zengeeks/preparation-check](https://github.com/zengeeks/preparation-check) でご案内している、下記のパターンが満たされているかご確認ください。手順も併記されています。
 
 - [パターンA: GitHub を利用するワークショップ](https://github.com/zengeeks/preparation-check#パターンa-github-を利用するワークショップ)
@@ -61,7 +64,7 @@
 
 ### Azure Static Web Apps CLI のインストール
 
-Azure Static Web Apps ではローカルでクラウド上と同じ動作をエミュレートできる CLI が用意されています。
+Azure Static Web Apps では、ローカルでクラウド上と同じ動作をエミュレートできる CLI が用意されています。
 
 > [Azure Static Web Apps 用にローカル開発環境を設定する | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/static-web-apps/local-development)
 
@@ -69,6 +72,15 @@ Azure Static Web Apps CLI (SWA CLI) をインストールするには、下記�
 
 ```sh
 npm install -g @azure/static-web-apps-cli
+```
+
+SWA CLI が正しくインストールできたか確認するには、任意のシェルで `swa -v` などのコマンドを実行し、エラーが出ないことを確認してください。
+
+```sh
+swa -v
+
+0.7.1
+...
 ```
 
 ### Visual Studio Code の拡張機能 Vetur のインストール
@@ -81,8 +93,18 @@ Visual Studio Code の拡張機能 Vetur は、Vue のコードの記述をサ�
 
 ## 3. 新規の Nuxt.js プロジェクトを作成する
 
-## 4. Azure Static Web App のリソースを作成する
+それではまず、手元の環境で Nuxt.js を用いて新規プロジェクトを作成していきます。
 
-## 5. Nuxt Content を組み込む
+- [ローカル環境でアプリケーションを作成する](docs/create-local-app.md)
 
-## 6. GitHub プルリクエストで SWA に自動デプロイする
+## 4. プロジェクトを GitHub のリポジトリに push する
+
+つぎに、作成したプロジェクトを GitHub のリポジトリに反映させましょう。
+
+- [プロジェクトを GitHub のリポジトリに push する](docs/push-to-github.md)
+
+## 5. Azure Static Web App のリソースを作成する
+
+## 6. Nuxt Content を組み込む
+
+## 7. GitHub プルリクエストで SWA に自動デプロイする
