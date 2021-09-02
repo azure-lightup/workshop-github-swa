@@ -9,7 +9,7 @@
 ```markdown
 ---
 title: GitHub について
-date: 2021.9.7s
+date: 2021.9.7
 ---
 
 ## GitHub とは
