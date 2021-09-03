@@ -2,7 +2,7 @@
 
 ## Azure Static Web Apps 準備する
 
-Azure ポータル (portal.azure.com) でリソースグループを作成します。
+Azure ポータル ( https://portal.azure.com ) でリソースグループを作成します。
 
 - 名称は `rg-jamstack` などワークショップ用とわかるようにしておくと、後でリソースをまとめて削除する際に便利です。
 
@@ -25,7 +25,24 @@ Azure ポータルで `リソースの作成` から `Static Web App` と検索�
 
 ### ワークフローファイルの取得
 
-ローカル開発環境に戻り、一旦コードをプルします (GitHub Actions 用のワークフロー YAML ファイルが自動生成されているため)。
+ローカル開発環境に戻り、一旦コードをプルします。
+
+```sh
+# remote の origin から変更を取得する
+git pull
+```
+
+するとこのように表示され、リポジトリ側での更新を取得することができます。
+
+```sh
+Updating 5adccaf..d5af591
+Fast-forward
+ .../azure-static-web-apps-green-tree-0bfcfd010.yml | 45 ++++++++++++++++++++++
+ 1 file changed, 45 insertions(+)
+ create mode 100644 .github/workflows/azure-static-web-apps-green-tree-0bfcfd010.yml
+```
+
+ここでは、先ほどの Azure ポータル上での操作で自動生成された GitHub Actions 用のワークフロー YAML ファイル `.github/workflows/azure-static-web-apps-xxx.yml` が取得されたことがわかります。
 
 ### GitHub Actions ワークフローを編集する
 
@@ -38,9 +55,16 @@ output_location: 'dist'
 app_build_command: 'npm run generate' # この行を追加します
 ```
 
-変更を Git にプッシュしておきます。
-
 > [Azure Static Web Apps の GitHub Actions ワークフロー | Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/static-web-apps/github-actions-workflow)
+
+ここまでの変更を GitHub にプッシュしておきます。
+
+```sh
+git status
+git add <変更したファイル>
+git commit
+git push
+```
 
 ### GitHub Actions ワークフローの動作確認
 

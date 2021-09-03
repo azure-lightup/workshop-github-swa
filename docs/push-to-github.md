@@ -101,7 +101,15 @@ GitHub (github.com) を開き、右上の「+」から「New repository」を選
 git remote add origin <リポジトリの remote URL>
 
 # main ブランチを origin に push する
-git push origin main
+git push -u origin main
 ```
 
 `git push` の実行が終わると、GitHub のリポジトリに push した内容が反映されていることが確認できます。（反映されない場合は、ページをリロードしてみてください。）
+
+<details>
+<summary>`git push` の `-u` オプションについて</summary>
+<br/>
+
+`git push` の `-u` （`--set-upstream`）オプションは、push  するブランチを remote の同名ブランチと同期させるための設定です。
+
+</details>

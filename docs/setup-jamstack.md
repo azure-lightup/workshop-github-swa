@@ -6,6 +6,8 @@ NuxtJS アプリケーションを Jamstack 構成 (Git ベースのヘッドレ
 
 ### 記事詳細画面の作成
 
+まず、記事詳細ページを作成しましょう。
+
 `pages` ディレクトリ配下に `_slug.vue` というファイルを作成し、以下のコードを貼りつけます。
 
 ```js
@@ -30,19 +32,26 @@ export default {
 </script>
 ```
 
-このコードで `content` ディレクトリ配下の Markdown ファイルを読み込むことができます。なお、`_slug.vue` は NuxtJS の [動的ルーティング機能](https://ja.nuxtjs.org/docs/2.x/directory-structure/pages#%E5%8B%95%E7%9A%84%E3%81%AA%E3%83%9A%E3%83%BC%E3%82%B8) を使ってルート名とファイル名を対応させて動的にページを表示しています。
+このファイルは、Vue における [SFC（Single File Components, 単一ファイルコンポーネント）](https://jp.vuejs.org/v2/guide/single-file-components.html) の構造で記述されています。`<template>`, `<script>`, `<style>` を１つのファイルにまとめることで、プロジェクト全体のファイル構成を見通しよくすることができます。
 
-以下の SWA CLI コマンドで、ローカル dev server を起動します。
+この `<script>` に書かれたコードでは、 `content` ディレクトリ配下の Markdown ファイルを読み込んでいます。
+
+また、`_slug.vue` というファイルは、NuxtJS の [動的ルーティング機能](https://ja.nuxtjs.org/docs/2.x/directory-structure/pages#%E5%8B%95%E7%9A%84%E3%81%AA%E3%83%9A%E3%83%BC%E3%82%B8) の仕組みを用いており、動的にページ名を取得することができます。例えば、`/hello` にアクセスされると、`params.slug` には `hello` が格納されるので、上記のコードと組み合わせて `content/hello.md` のファイルの中身を読み込むといった処理を行うことができます。
+
+それでは、動作を確認してみましょう。以下の SWA CLI コマンドで、ローカル dev server を起動します。
 
 ```sh
-swa start http://localhost:3000 --run "npm run dev"
+npm run generate
+swa start dist
 ```
 
-ブラウザで記事詳細の URL `http://localhost:4280/hello` を開きます。
+ブラウザで記事詳細の URL `http://localhost:4280/hello` を開きます。すると、 `content/hello.md` の内容が表示されることが確認できます。
 
 ### 記事一覧コンポーネントの作成
 
-次に記事の一覧ページを準備します。まず、一覧表示部分は今後複数のページから呼ばれる可能性があるので、Vue.js の [コンポーネント](https://ja.nuxtjs.org/docs/2.x/directory-structure/components) としてを作成します。
+次に記事の一覧ページを準備します。
+
+まず、一覧表示部分は今後複数のページから呼ばれる可能性があるので、Vue.js の [コンポーネント](https://ja.nuxtjs.org/docs/2.x/directory-structure/components) としてを作成します。
 
 `components` ディレクトリに `ArticleList.vue` ファイルを作成し、以下のコードを貼りつけます。
 
@@ -51,6 +60,7 @@ swa start http://localhost:3000 --run "npm run dev"
   <nuxt-link :to="slug">
     <div class="border p-4 rounded my-1">
       <h2 class="text-2xl mb-2">{{ title }}</h2>
+      <div class="text-l text-gray-400"><code>/{{ slug }}</code></div>
       <div class="text-l">{{ date }}</div>
     </div>
   </nuxt-link>
@@ -96,7 +106,7 @@ export default {
 </script>
 ```
 
-ブラウザで記事一覧の URL `http://localhost:4280` を開きます。
+ブラウザで記事一覧の URL `http://localhost:4280` を開きます。すると、`content` ディレクトリ配下の Markdown ファイルを参照する記事一覧が表示されます。
 
 最後に、変更を GitHub にプッシュしておいて下さい。
 

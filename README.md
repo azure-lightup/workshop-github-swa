@@ -1,14 +1,15 @@
-# Azure Light-up for GitHub + Azure Static Web Apps ワークショップ用リポジトリ
+# Azure Light-up for GitHub + Jamstack ワークショップ用リポジトリ
 
-このリポジトリは、Azure Light-up ワークショップシリーズのうち、GitHub と Azure Static Web Apps を学ぶワークショップの資料です。
+このリポジトリは、Azure Light-up ワークショップシリーズのうち、GitHub と Jamstack を学ぶワークショップの資料です。
 
-ワークショップでは、Nuxt.js を用いて Jamstack で構成されたアプリケーションを作成し、GitHub Actions と Azure Static Web Apps を用いてホストする一連の流れを学習します。
+このワークショップでは、Nuxt.js を用いて Jamstack で構成されたアプリケーションを作成し、GitHub Actions と Azure Static Web Apps を用いてホストする一連の流れを学習します。
 
 ### 用語解説
 
 <details>
 <summary>用語解説はこちら</summary>
 <br/>
+
 | 用語 | 説明 |
 |----|----|
 | GitHub | Git を用いてバージョン管理を行うためのプラットフォーム。ファイルの管理だけでなく、コラボレーションのための機能が豊富で、セキュリティの強化の機能が拡充されて行っています。 |
@@ -47,6 +48,7 @@
 <details>
 <summary>環境準備については、こちらをご参考ください。</summary>
 <br/>
+
 環境チェック用リポジトリ [zengeeks/preparation-check](https://github.com/zengeeks/preparation-check) でご案内している、下記のパターンが満たされているかご確認ください。手順も併記されています。
 
 - [パターンA: GitHub を利用するワークショップ](https://github.com/zengeeks/preparation-check#パターンa-github-を利用するワークショップ)
@@ -119,7 +121,6 @@ GitHub のリポジトリにプロジェクトを反映したので、Azure Stat
 
 ## 7. GitHub のプルリクエストを利用して SWA に自動デプロイする
 
-- [GitHub リポジトリを安全に保つための設定を行う]()
-
+- [GitHub リポジトリを安全に保つための設定を行う](docs/configure-github-repo-securely.md)
 
 - [Jamstack でコンテンツを更新する](docs/add-article.md)
