@@ -111,7 +111,7 @@ npm run start
 swa start dist
 ```
 
-開発しながら SWA CLI で動作確認する場合は以下のコマンドを使います。
+なお、開発しながら SWA CLI で動作確認する場合は以下のコマンドを使います。
 
 ```sh
 swa start http://localhost:3000 --run "npm run dev"

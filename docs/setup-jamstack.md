@@ -38,7 +38,7 @@ export default {
 
 また、`_slug.vue` というファイルは、NuxtJS の [動的ルーティング機能](https://ja.nuxtjs.org/docs/2.x/directory-structure/pages#%E5%8B%95%E7%9A%84%E3%81%AA%E3%83%9A%E3%83%BC%E3%82%B8) の仕組みを用いており、動的にページ名を取得することができます。例えば、`/hello` にアクセスされると、`params.slug` には `hello` が格納されるので、上記のコードと組み合わせて `content/hello.md` のファイルの中身を読み込むといった処理を行うことができます。
 
-それでは、動作を確認してみましょう。以下の SWA CLI コマンドで、ローカル dev server を起動します。
+それでは、動作を確認してみましょう。静的ファイルを更新し、SWA CLI でエミュレートします。
 
 ```sh
 npm run generate
