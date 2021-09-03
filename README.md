@@ -115,12 +115,16 @@ GitHub のリポジトリにプロジェクトを反映したので、Azure Stat
 
 先の手順で、Azure Static Web Apps へデプロイする CI/CD の環境が整いました。
 
-ここからは、Jamstack の仕組みを用いてコンテンツを管理する流れを体験します。
+ここからは、Jamstack の仕組みを用いてコンテンツを管理する実装をつくります。
 
 - [Jamstack をセットアップする](docs/setup-jamstack.md)
 
 ## 7. GitHub のプルリクエストを利用して SWA に自動デプロイする
 
+最後に、実際の開発でコラボレーションを行うことを想定して、GitHub のプルリクエストを活用して CI/CD のパイプラインが実行される流れを作ります。
+
 - [GitHub リポジトリを安全に保つための設定を行う](docs/configure-github-repo-securely.md)
+
+GitHub の設定が整ったら、Jamstack のコンテンツを更新して一覧の流れを体験してみましょう。
 
 - [Jamstack でコンテンツを更新する](docs/add-article.md)
