@@ -2,7 +2,7 @@
 
 ## プロジェクトの変更を Git で管理する
 
-先ほど作成したプロジェクトは、作成時に `Version control system: Git` と指定したので、すでに Git でバージョン管理ができるようになっています。
+先ほど作成した Nuxt.js のプロジェクトは、作成時に `Version control system: Git` と指定したので、すでに Git でバージョン管理ができるようになっています。
 
 まずは、ユーザー名とメールアドレスを設定しましょう。
 
@@ -72,7 +72,7 @@ git commit
 
 プロジェクトの準備ができたら、つぎは GitHub でプロジェクトを管理するために、リポジトリを作成しましょう。
 
-GitHub (github.com) を開き、右上の「+」から「New repository」を選択して新しいリポジトリの作成に進みます。
+GitHub（ https:github.com ）を開き、右上の「+」から「New repository」を選択して新しいリポジトリの作成に進みます。
 
 ![github.com で「New repository」を選択する](./images/github_create-new-repository_001.png)
 
@@ -107,9 +107,9 @@ git push -u origin main
 `git push` の実行が終わると、GitHub のリポジトリに push した内容が反映されていることが確認できます。（反映されない場合は、ページをリロードしてみてください。）
 
 <details>
-<summary>`git push` の `-u` オプションについて</summary>
+<summary>git push の -u オプションについて</summary>
 <br/>
 
-`git push` の `-u` （`--set-upstream`）オプションは、push  するブランチを remote の同名ブランチと同期させるための設定です。
+`git push` の `-u` （`--set-upstream`）オプションは、これから push するブランチを、`remote` の同名ブランチと同期させるための設定です。
 
 </details>

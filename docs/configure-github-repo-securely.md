@@ -8,7 +8,8 @@ GitHub では、コラボレーションして開発を進めやすくするた�
 
 実際の開発では、この Branch protection を利用して、本番用のメインブランチへの意図しない変更を防ぎ、プルリクエストを用いてレビュープロセスを設けてコードの品質を担保することができます。
 
-> [保護されたブランチについて - GitHub Docs](https://docs.github.com/ja/github/administering-a-repository/defining-the-mergeability-of-pull-requests/about-protected-branches)
+> - [保護されたブランチについて - GitHub Docs](https://docs.github.com/ja/github/administering-a-repository/defining-the-mergeability-of-pull-requests/about-protected-branches)
+> - [Inviting collaborators to a personal repository - GitHub Docs](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
 
 ## Branch protection を設定する
 
@@ -30,9 +31,9 @@ GitHub では、コラボレーションして開発を進めやすくするた�
 
 ## アクセスを管理する
 
-子のリポジトリの共同開発者として、コラボレーターを設定することができます。
+このリポジトリの共同開発者として、コラボレーターを招待することができます。
 
-「Settings」タブの「Manage access」を開き、「Invite a collaborator」ボタンを選択します。ここでは、講師（ @dzeyelid ）を指定し、「Add <user name> to this repository」ボタンから招待します。
+「Settings」タブの「Manage access」を開き、「Invite a collaborator」ボタンを選択します。ここでは、講師（ @dzeyelid ）を指定し、「Add \<user name\> to this repository」ボタンから招待します。
 
-招待された人にはメールで招待が届くので、承諾してもらうことで、コントリビューターとして参加してもらえるようになります。
+招待された人にはメールで招待が届くので、承諾してもらうことで、コラボレーターとして参加してもらえるようになります。
 
