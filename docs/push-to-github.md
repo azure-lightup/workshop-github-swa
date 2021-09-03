@@ -64,6 +64,8 @@ git add .
 git commit
 ```
 
+※ ディレクトリごと対象にする場合、対象のファイルがすべて意図したものであることを確認した上で実行してください。場合によっては、シークレットなどを含むローカルでしか使わないファイルごと追加してしまう危険もあります。Gitの管理に含めたくないファイルやディレクトリがある場合は `.gitignore` を活用するとよいでしょう。
+
 `git commit` を実行すると、Git をインストールするときに指定したエディタが開き、コミットメッセージの編集を求められます。任意のメッセージを入力し保存すると、コミットが完了します。（空のままではコミットできません。）
 
 ## GitHub にリポジトリを用意する
@@ -98,7 +100,7 @@ GitHub (github.com) を開き、右上の「+」から「New repository」を選
 # remote に origin という名前で GitHub のリポジトリを設定する
 git remote add origin <リポジトリの remote URL>
 
-# main ブランチを push する
+# main ブランチを origin に push する
 git push origin main
 ```
 

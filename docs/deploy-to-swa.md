@@ -2,7 +2,7 @@
 
 ## Azure Static Web Apps 準備する
 
-Azure ポータルでリソースグループを作成します。
+Azure ポータル (portal.azure.com) でリソースグループを作成します。
 
 - 名称は `rg-jamstack` などワークショップ用とわかるようにしておくと、後でリソースをまとめて削除する際に便利です。
 

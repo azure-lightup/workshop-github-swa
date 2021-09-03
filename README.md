@@ -26,9 +26,9 @@
 - 2. 追加の環境準備
 - 3. 新規の Nuxt.js プロジェクトを作成する
 - 4. プロジェクトを GitHub のリポジトリに push する
-- 5. Azure Static Web App のリソースを作成する
-- 6. Nuxt Content を組み込む
-- 7. GitHub プルリクエストで SWA に自動デプロイする
+- 5. Azure Static Web App にデプロイする
+- 6. Jamstack をセットアップする
+- 7. GitHub のプルリクエストを利用して SWA に自動デプロイする
 
 ## 1. 事前準備環境チェック
 
@@ -99,12 +99,27 @@ Visual Studio Code の拡張機能 Vetur は、Vue のコードの記述をサ�
 
 ## 4. プロジェクトを GitHub のリポジトリに push する
 
-つぎに、作成したプロジェクトを GitHub のリポジトリに反映させましょう。
+つぎに、作成したプロジェクトを GitHub のリポジトリに反映させます。
 
 - [プロジェクトを GitHub のリポジトリに push する](docs/push-to-github.md)
 
-## 5. Azure Static Web App のリソースを作成する
+## 5. Azure Static Web App にデプロイする
 
-## 6. Nuxt Content を組み込む
+GitHub のリポジトリにプロジェクトを反映したので、Azure Static Web Apps へデプロイする準備ができました。Azure ポータルでリソースを作成しデプロイしてみましょう。
 
-## 7. GitHub プルリクエストで SWA に自動デプロイする
+- [アプリケーションを Azure Static Web Apps にデプロイする](docs/deploy-to-swa.md)
+
+## 6. Jamstack をセットアップする
+
+先の手順で、Azure Static Web Apps へデプロイする CI/CD の環境が整いました。
+
+ここからは、Jamstack の仕組みを用いてコンテンツを管理する流れを体験します。
+
+- [Jamstack をセットアップする](docs/setup-jamstack.md)
+
+## 7. GitHub のプルリクエストを利用して SWA に自動デプロイする
+
+- [GitHub リポジトリを安全に保つための設定を行う]()
+
+
+- [Jamstack でコンテンツを更新する](docs/add-article.md)

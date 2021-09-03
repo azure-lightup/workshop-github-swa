@@ -67,7 +67,7 @@ export default {
 </script>
 ```
 
-`pages/index.vue` で `ArticleList` コンポーネント呼ぶように以下のようにコードを修正します。
+`pages/index.vue` で `ArticleList` コンポーネントを呼ぶように以下のようにコードを修正します。
 
 ```js
 <template>
@@ -98,4 +98,17 @@ export default {
 
 ブラウザで記事一覧の URL `http://localhost:4280` を開きます。
 
-最後に、Git で変更をプッシュしておいて下さい。
+最後に、変更を GitHub にプッシュしておいて下さい。
+
+```sh
+# 変更したファイルをステージに追加する
+git add pages/_slug.vue
+git add components/ArticleList.vue
+git add pages/index.vue
+
+# ステージの変更をコミットする
+git commit
+
+# 現在のブランチのアップストリームに push する（ `origin main` を省略可能）
+git push
+```

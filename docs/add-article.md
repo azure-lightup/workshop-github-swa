@@ -45,15 +45,28 @@ swa start dist
 
 動的な構成でのアプリケーションと同じように記事が表示されてれば成功です。
 
-プッシュして Azure 上での動作確認を行います。
+GitHub にプッシュして Azure 上での動作確認を行います。
+
+```sh
+git add content/github.md
+git commit
+git push
+```
 
 ## 記事を更新する
 
 記事を更新するには、`content` ディレクトリ以下の Markdown ファイルを編集します。ここでは、微細な修正を行うケースを想定して、GitHub 上で直接 Markdown を更新します。
 
 - GitHub リポジトリで `Code` タブから `content/hello.md` を開きます。
-- ブラウザで Markdown が表示されたら、キーボードで `.` を打鍵します。
-- 画面がエディタに変更されるので以下のようにフロントマターに `date` 属性を追加します。
+- ブラウザで Markdown が表示されたら、キーボードで `.` を打鍵すると、ブラウザ上でエディタが開きます。
+
+まず、新しいブランチに切替えてみましょう。
+
+- 左下に表示されている現在のブランチ名（ `main` ）を選択してプルダウンの選択肢から「+ Create New Branch...」を選択します。
+- 任意のブランチ名（ `update-content` など）を入力し、確定します。
+- ブランチを切り替えるか確認されるので、「Switch to Branch」ボタンを選択し切替えます。
+
+ブランチが切替えられたら、以下のようにフロントマターに `date` 属性を追加します。
 
 ```markdown
 ---
@@ -65,5 +78,9 @@ Empower your NuxtJS application with `@nuxtjs/content` ...（以下省略）
 ```
 
 エディタ左メニューの Source Control アイコンから変更をコミットします(明示的なプッシュは不要)。
+
+つぎに、GitHub リポジトリ上で、変更を確認してみましょう。
+
+エディタ左下の「>< GitHub」を選択し
 
 `Actions` タブで CI/CD の進行状況を確認した後、Static Web App の URL で記事の変更が反映されたことを確認します。
