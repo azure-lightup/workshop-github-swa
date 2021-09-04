@@ -9,8 +9,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { Context } from '@nuxt/types'
-import { Article } from '@/types/article'
+import { Context, Article } from '@nuxt/types'
 
 export default Vue.extend({
   async asyncData({ $content, params }: Context) {
