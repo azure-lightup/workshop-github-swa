@@ -1,20 +1,22 @@
 <template>
-  <nuxt-link :to="slug">
+  <nuxt-link :to="article.slug">
     <div class="border p-4 rounded my-1">
-      <h2 class="text-2xl mb-2">{{ title }}</h2>
-      <div class="text-l">{{ date }}</div>
+      <h2 class="text-2xl mb-2">{{ article.title }}</h2>
+      <div class="text-l">{{ article.date || 'xxxx.xx.xx' }}</div>
     </div>
   </nuxt-link>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue, { PropOptions } from 'vue'
+import { Article } from '@nuxt/types'
 
 export default Vue.extend({
   props: {
-    title: { type: String, required: true },
-    date: { type: String, required: false, default: 'xxxx.xx.xx' },
-    slug: { type: String, required: true },
+    article: {
+      type: Object,
+      required: true,
+    } as PropOptions<Article>,
   },
 })
 </script>

@@ -5,9 +5,7 @@
       <ArticleList
         v-for="(article, index) in articles"
         :key="index"
-        :title="article.title"
-        :date="article.date"
-        :slug="article.slug"
+        :article="article"
       ></ArticleList>
     </div>
   </div>
