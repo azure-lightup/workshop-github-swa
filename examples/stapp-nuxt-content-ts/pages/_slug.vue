@@ -17,7 +17,7 @@ export default Vue.extend({
     return { page }
   },
   data() {
-    return { page: {} as Article }
+    return { page: {} as Article } // template で型が効くようにするために必要
   },
 })
 </script>
