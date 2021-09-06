@@ -8,7 +8,8 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
+import type { PropOptions } from 'vue'
 import { Article } from '@nuxt/types'
 
 export default Vue.extend({
