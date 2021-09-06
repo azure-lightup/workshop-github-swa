@@ -33,7 +33,7 @@ GitHub では、コラボレーションして開発を進めやすくするた�
 
 このリポジトリの共同開発者として、コラボレーターを招待することができます。
 
-「Settings」タブの「Manage access」を開き、「Invite a collaborator」ボタンを選択します。ここでは、講師（ @dzeyelid ）を指定し、「Add \<user name\> to this repository」ボタンから招待します。
+「Settings」タブの「Manage access」を開き、「Invite a collaborator」ボタンを選択します。ここでは、講師（ @dzeyelid , @k-miyake  ）を指定し、「Add \<user name\> to this repository」ボタンから招待します。
 
 招待された人にはメールで招待が届くので、承諾してもらうことで、コラボレーターとして参加してもらえるようになります。
 
