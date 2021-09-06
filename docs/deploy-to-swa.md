@@ -42,7 +42,7 @@ Fast-forward
  create mode 100644 .github/workflows/azure-static-web-apps-xxxxx-xxxx-xxxxxxxx.yml
 ```
 
-ここでは、先ほどの Azure ポータル上での操作で自動生成された GitHub Actions 用のワークフロー YAML ファイル `.github/workflows/azure-static-web-apps-xxx.yml` が取得されたことがわかります。
+ここでは、先ほどの Azure ポータル上での操作で自動生成された GitHub Actions 用のワークフロー YAML ファイル `.github/workflows/azure-static-web-apps-xxxx-xxxx-xxxxxxxx.yml` が取得されたことがわかります。
 
 ### GitHub Actions ワークフローを編集する
 
