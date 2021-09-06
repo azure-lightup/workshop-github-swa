@@ -17,7 +17,6 @@
 | [Visual Studio Code](https://code.visualstudio.com/) | オープンソースのエディタ。さまざまな拡張機能により、幅広い言語、用途で利用されています。 |
 | [Nuxt.js](https://ja.nuxtjs.org/) | Vue.js をベースとしたフロントエンドフレームワーク。Nuxt.js を利用することで、よく利用されるルーティングや Linter、テストフレームワークなどを簡単に導入できます。 |
 | [Nuxt Content](https://content.nuxtjs.org/) | Nuxt.js のモジュールで、プロジェクト内に配置した Markdown などからコンテンツを取得してアプリケーションに取り込むことができます。 |
-| Markdown |  |
 
 </details>
 
