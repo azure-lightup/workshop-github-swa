@@ -125,6 +125,6 @@ GitHub のリポジトリにプロジェクトを反映したので、Azure Stat
 
 - [GitHub リポジトリを安全に保つための設定を行う](docs/configure-github-repo-securely.md)
 
-GitHub の設定が整ったら、Jamstack のコンテンツを更新して一覧の流れを体験してみましょう。
+GitHub の設定が整ったら、Jamstack のコンテンツを更新して一連の流れを体験してみましょう。
 
 - [Jamstack でコンテンツを更新する](docs/add-article.md)
