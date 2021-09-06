@@ -37,7 +37,7 @@ git pull
 ```sh
 Updating 5adccaf..d5af591
 Fast-forward
- .../azure-static-web-apps-green-tree-0bfcfd010.yml | 45 ++++++++++++++++++++++
+ .../azure-static-web-apps-xxxx-xxxx-xxxxxxxx.yml | 45 ++++++++++++++++++++++
  1 file changed, 45 insertions(+)
  create mode 100644 .github/workflows/azure-static-web-apps-green-tree-0bfcfd010.yml
 ```
