@@ -12,12 +12,12 @@
 
 | 用語 | 説明 |
 |----|----|
-| GitHub | Git を用いてバージョン管理を行うためのプラットフォーム。ファイルの管理だけでなく、コラボレーションのための機能が豊富で、セキュリティの強化の機能が拡充されて行っています。 |
-| Azure Static Web Apps (SWA) | |
-| Visual Studio Code | |
-| Nuxt.js | |
-| Nuxt Content | |
-| Markdown | |
+| [GitHub](https://github.com/) | Git を用いてバージョン管理を行うためのプラットフォーム。ファイルの管理だけでなく、コラボレーションのための機能が豊富で、セキュリティの強化の機能が拡充されて行っています。 |
+| [Azure Static Web Apps (SWA)](https://docs.microsoft.com/en-us/azure/static-web-apps/) | 静的サイトをホストできる Azure サービス。Azure Functions を内包または外部連携することができるので、バックエンドの API も一括で管理することができます。 |
+| [Visual Studio Code](https://code.visualstudio.com/) | オープンソースのエディタ。さまざまな拡張機能により、幅広い言語、用途で利用されています。 |
+| [Nuxt.js](https://ja.nuxtjs.org/) | Vue.js をベースとしたフロントエンドフレームワーク。Nuxt.js を利用することで、よく利用されるルーティングや Linter、テストフレームワークなどを簡単に導入できます。 |
+| [Nuxt Content](https://content.nuxtjs.org/) | Nuxt.js のモジュールで、プロジェクト内に配置した Markdown などからコンテンツを取得してアプリケーションに取り込むことができます。 |
+| Markdown |  |
 
 </details>
 
