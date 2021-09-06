@@ -17,7 +17,7 @@ import { Context, Article } from '@nuxt/types'
 
 export default Vue.extend({
   async asyncData({ $content }: Context) {
-    const query = await $content('/')
+    const query = $content('/')
     const articles = await query.fetch()
     return { articles }
   },
